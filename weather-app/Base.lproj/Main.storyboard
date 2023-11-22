@@ -35,6 +35,9 @@
                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="location.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="locationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQB-OX-sO6"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gOF-KW-WuP">
                                                 <rect key="frame" x="59.333333333333343" y="0.0" width="274" height="50"/>
@@ -51,6 +54,9 @@
                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                                <connections>
+                                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JZJ-tW-RLR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -122,6 +128,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="duB-J2-Ha4" secondAttribute="trailing" id="k26-f2-itV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="conditionImage" destination="Ozj-Yk-bau" id="sLX-2E-E79"/>
+                        <outlet property="locationLabel" destination="xKU-xI-Jgb" id="J9a-yh-e2N"/>
+                        <outlet property="searchTextField" destination="gOF-KW-WuP" id="CJR-3Q-Ply"/>
+                        <outlet property="tempLabel" destination="G8B-fz-VJF" id="c7S-XZ-VXj"/>
+                        <outlet property="tempUnitLabel" destination="sP5-lz-Uew" id="SrJ-6j-v00"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
